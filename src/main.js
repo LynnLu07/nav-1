@@ -3,9 +3,11 @@ const $lastLi = $siteList.find('li.last');
 const x = localStorage.getItem('x')
 const xObject = JSON.parse(x)
 const hashMap = xObject || [
-    { logo: 'A', url: 'https://www.acfun.cn' },
     { logo: 'B', url: 'https://www.bilibili.com' },
+    { logo: 'M', url: 'https://developer.mozilla.org/zh-CN/' },
+    { logo: 'G', url: 'https://github.com/' },
     { logo: 'S', url: 'https://shimo.im/welcome' },
+    { logo: 'L', url: 'http://lynnlu.xyz/' },
 ]
 
 const removeX = (url) => {

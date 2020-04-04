@@ -123,14 +123,20 @@ var $lastLi = $siteList.find('li.last');
 var x = localStorage.getItem('x');
 var xObject = JSON.parse(x);
 var hashMap = xObject || [{
-  logo: 'A',
-  url: 'https://www.acfun.cn'
-}, {
   logo: 'B',
   url: 'https://www.bilibili.com'
 }, {
+  logo: 'M',
+  url: 'https://developer.mozilla.org/zh-CN/'
+}, {
+  logo: 'G',
+  url: 'https://github.com/'
+}, {
   logo: 'S',
   url: 'https://shimo.im/welcome'
+}, {
+  logo: 'L',
+  url: 'http://lynnlu.xyz/'
 }];
 
 var removeX = function removeX(url) {
@@ -182,4 +188,4 @@ window.onbeforeunload = function () {
 //     }
 // })
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.ac87cf17.js.map
+//# sourceMappingURL=main.e0d7292f.js.map

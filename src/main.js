@@ -5,6 +5,7 @@ const xObject = JSON.parse(x)
 const hashMap = xObject || [
     { logo: 'A', url: 'https://www.acfun.cn' },
     { logo: 'B', url: 'https://www.bilibili.com' },
+    { logo: 'S', url: 'https://shimo.im/welcome' },
 ]
 
 const removeX = (url) => {
@@ -44,7 +45,7 @@ render()
 
 $('.addButton')
     .on('click', () => {
-        let url = window.prompt('请问你要添加的网址是啥？')
+        let url = window.prompt('你又想加什么啦？')
         if (url.indexOf('http') !== 0) {
             url = 'http://' + url
         }
@@ -62,11 +63,15 @@ window.onbeforeunload = () => {
     localStorage.setItem('x', string)
 }
 
-$(document).on('keypress', (e) => {
-    const { key } = e
-    for (let i = 0; i < hashMap.length; i++) {
-        if (hashMap[i].logo.toLowerCase() === key) {
-            window.open(hashMap[i].url)
-        }
-    }
-})
+
+// $(document).on('keypress', (e) => {
+//     const { key } = e
+//     for (let i = 0; i < hashMap.length; i++) {
+//         if (hashMap[i].logo.toLowerCase() === key) {
+//             window.open(hashMap[i].url)
+//         }
+//     }
+// })
+
+
+
